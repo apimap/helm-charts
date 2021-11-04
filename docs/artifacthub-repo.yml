@@ -9,7 +9,7 @@
 # when the hash of the last commit in the branch you set up changes. This does
 # NOT apply to ownership claim operations, which are processed immediately.
 #
-repositoryID: b2075dd6-080f-4852-a280-065691bc7293
-owners: # (optional, used to claim repository ownership)
-  - name: msulland
+repositoryID: da4a9acd-8f63-4223-8658-28525d0793f2
+owners:
+  - name: Magnus Sulland
     email: magnus@apperiet.no
