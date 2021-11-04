@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "apimap.name" .}}-configmap
+data:
+  config.json: |
+    {{ "{" }}
+      {{- printf "\"nitrite.filePath\": \"%s\"," .Values.storage.nitrite.path -}}
+      {{- printf "\"apimap.metadata.copyright\": \"%s\"," .Values.metadata.copyright -}}
+      {{- printf "\"apimap.metadata.faq\": \"%s\"," .Values.metadata.faq -}}
+      {{- printf "\"apimap.metadata.support\": \"%s\"," .Values.metadata.support -}}
+      {{- printf "\"apimap.openapi.enabled\": \"%v\"" .Values.openapi.enabled -}},
+      {{- printf "\"logging.level.root\": \"%s\"" .Values.log.level -}}
+    {{ "}" }}

@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Apimap.io Chart JSON Schema",
+  "type": "object",
+  "properties": {
+    "log": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "title": "Log level",
+          "type": "string",
+          "default": "info",
+          "enum": ["TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL", "OFF"]
+        }
+      },
+      "required": ["level"]
+    },
+    "storage": {
+      "type": "object",
+      "properties": {
+        "jdbc": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enable jdbc support",
+              "type": "boolean",
+              "default": false
+            },
+            "url": {
+              "type": "string",
+              "title": "JDBC URL, e.g. jdbc:mysql://localhost/test"
+            },
+            "driver": {
+              "type": "string",
+              "title": "JDBC Driver e.g. com.mysql.jdbc.Driver"
+            }
+          },
+          "required":["enabled"]
+        },
+        "nitrite": {
+          "type": "object",
+          "properties": {
+            "mountingPoint": {
+              "title": "NITRITE root folder",
+              "type": "string"
+            },
+            "enabled": {
+              "title": "Enable NITRITE support",
+              "type": "boolean",
+              "default": false
+            }
+          },
+          "required":["enabled"]
+        }
+      }
+    },
+    "openapi": {
+      "type": "object",
+      "properties":{
+        "enabled": {
+          "title": "Enable OpenAPI support",
+          "description": "If enabled a openapi document is available at <base url>/documentation/openapi3",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "copyright": {
+          "title": "Copyright notice on the content of the catalog",
+          "type": "string"
+        },
+        "faq": {
+          "title": "Very short description and URL to the place the organization has stored information about this solution, implementation and usage.",
+          "type": "string"
+        },
+        "support": {
+          "title": "Very short description and URL to where support for this solution is to be found.",
+          "type": "string"
+        }
+      },
+      "required": ["copyright", "faq", "support"]
+    }
+  }
+}

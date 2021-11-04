@@ -1,3 +1,41 @@
 apiVersion: v1
 entries:
-generated: 2021-11-04T15:23:37+01:00
+  apimap-api:
+  - annotations:
+      artifacthub.io/images: |
+        - name: apimap
+          image: apimap/api:1.0.0
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/apimap/helm-charts-api
+        - name: Apimap.io
+          url: http://apimap.io
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-11-04T16:44:05.137864999+01:00"
+    description: Apimap.io is a centralized API registry. Creating a single place
+      for discoverability, reuse and sharing of knowledge across an organization.
+    digest: 84fac4c052d6d39b61ec0e04f843a89ed80dea9e31378b8035a6199e07274ad9
+    home: http://apimap.io
+    keywords:
+    - api
+    - registry
+    - catalog
+    - hub
+    - apimap.io
+    - search
+    - overview
+    maintainers:
+    - email: magnus.sulland@telenor.no
+      name: Magnus Sulland
+    name: apimap-api
+    sources:
+    - https://github.com/apimap/java-api
+    - https://github.com/apimap
+    - https://hub.docker.com/r/apimap/api
+    type: application
+    urls:
+    - https://apimap.github.io/helm-charts/apimap-api-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-11-04T16:44:05.134285857+01:00"

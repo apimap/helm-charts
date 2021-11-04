@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ template "apimap.name" .}}-statefulset
+  labels:
+    app: {{ template "apimap.name" .}}-api
+    role: api
+    supplier: apimap.io
+spec:
+  serviceName: {{ template "apimap.name" .}}-api
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ template "apimap.name" .}}-api
+  template:
+    metadata:
+      labels:
+        app: {{ template "apimap.name" .}}-api
+        role: api
+    spec:
+      containers:
+        - name: {{ template "apimap.name" .}}-api
+          image: apimap/api:latest
+          imagePullPolicy: Always
+          ports:
+            - name: public
+              containerPort: {{ template "apimap.targetPort" .}}
+          env:
+            - name: SPRING_APPLICATION_JSON
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ template "apimap.name" .}}-configmap
+                  key: config.json
+          {{ if .Values.storage.nitrite.enabled }}
+          volumeMounts:
+            - name: {{ template "apimap.name" .}}-nitrite-path
+              mountPath: {{ .Values.storage.nitrite.path }}
+          {{ end }}
+      {{ if .Values.storage.nitrite.enabled }}
+      volumes:
+        - name: {{ template "apimap.name" .}}-nitrite-path
+          persistentVolumeClaim:
+            claimName: {{ template "apimap.name" .}}-claim
+      {{ end }}
