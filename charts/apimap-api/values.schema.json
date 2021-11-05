@@ -18,34 +18,16 @@
     "storage": {
       "type": "object",
       "properties": {
-        "jdbc": {
-          "type": "object",
-          "properties": {
-            "enabled": {
-              "title": "Enable jdbc support",
-              "type": "boolean",
-              "default": false
-            },
-            "url": {
-              "type": "string",
-              "title": "JDBC URL, e.g. jdbc:mysql://localhost/test"
-            },
-            "driver": {
-              "type": "string",
-              "title": "JDBC Driver e.g. com.mysql.jdbc.Driver"
-            }
-          },
-          "required":["enabled"]
-        },
         "nitrite": {
           "type": "object",
           "properties": {
             "mountingPoint": {
-              "title": "NITRITE root folder",
-              "type": "string"
+              "title": "Root folder used to store all NoSQL files",
+              "type": "string",
+              "default": "/var/apimap"
             },
             "enabled": {
-              "title": "Enable NITRITE support",
+              "title": "Enable NITRITE (NoSQL) support",
               "type": "boolean",
               "default": false
             }
