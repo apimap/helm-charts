@@ -25,7 +25,7 @@ The following tables list the configurable parameters of the Apimap.io API chart
 | storage.nitrite                   | Use internal NoSQL database to provide content storrage | Object |
 | storage.nitrite.mountingPoint     | Root folder used to store all NoSQL files | /var/apimap |
 | storage.nitrite.enabled           | Enable NITRITE (NoSQL) support | true | Required |
-| storage.nitrite.storageClass      | Storage class to be used for the volume  | "" | 
+
 ### Log
 
 | Parameter                         | Description                          | Default                                   | Required |

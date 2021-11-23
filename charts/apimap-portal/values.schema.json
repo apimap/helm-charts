@@ -30,10 +30,6 @@
               "title": "Enable NITRITE (NoSQL) support",
               "type": "boolean",
               "default": false
-            },
-            "storageClass": {
-              "title": "StorageClass to be used",
-              "type": "string"
             }
           },
           "required":["enabled"]

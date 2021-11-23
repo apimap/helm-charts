@@ -14,8 +14,6 @@ storage:
     path: "/var/apimap"
     # enabled nitrite support
     enabled: true
-    # storage class to be used
-    storageClass: ""
 # log level
 log:
   # service log level definition

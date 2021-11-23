@@ -7,9 +7,10 @@ spec:
   claimRef:
     name: {{ template "apimap.name" .}}-claim
   capacity:
-    storage: 10Gi
+    storage: 2Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
     path: {{ .Values.storage.nitrite.path }}
+  storageClassName: {{ .Values.storage.nitrite.storageClass }}
 {{- end -}}

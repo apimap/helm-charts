@@ -1,5 +1,5 @@
 apiVersion: v2
-name: apimap-api
+name: apimap-developer
 description: "Apimap.io is a centralized API registry. Creating a single place for discoverability, reuse and sharing of knowledge across an organization."
 type: application
 keywords:
@@ -19,7 +19,7 @@ maintainers:
   - name: Magnus Sulland
     email: magnus.sulland@telenor.no
 appVersion: "1.0.0"
-version: "0.0.2"
+version: "0.0.1"
 annotations:
   artifacthub.io/links: |
     - name: Chart Source

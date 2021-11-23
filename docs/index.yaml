@@ -4,6 +4,43 @@ entries:
   - annotations:
       artifacthub.io/images: |
         - name: apimap
+          image: apimap/api:1.0.0,apimap/api:latest
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/apimap/helm-charts
+        - name: Apimap.io
+          url: http://apimap.io
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-11-23T14:06:07.92306274+01:00"
+    description: Apimap.io is a centralized API registry. Creating a single place
+      for discoverability, reuse and sharing of knowledge across an organization.
+    digest: a69b2b0312a10209ad8ddb63a24c9983500bfcf67a24b39941059eb431584b75
+    home: http://apimap.io
+    keywords:
+    - api
+    - registry
+    - catalog
+    - hub
+    - apimap.io
+    - search
+    - overview
+    maintainers:
+    - email: magnus.sulland@telenor.no
+      name: Magnus Sulland
+    name: apimap-api
+    sources:
+    - https://github.com/apimap/java-api
+    - https://github.com/apimap
+    - https://hub.docker.com/r/apimap/api
+    type: application
+    urls:
+    - https://apimap.github.io/helm-charts/apimap-api-0.0.2.tgz
+    version: 0.0.2
+  - annotations:
+      artifacthub.io/images: |
+        - name: apimap
           image: apimap/api:1.0.0
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -13,7 +50,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-05T10:28:37.345132995+01:00"
+    created: "2021-11-23T14:06:07.921632773+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 6b508cc5e65685a718728b1817fc0abb147c6b0694f22c39b5b5a4751e3fa71c
@@ -38,4 +75,4 @@ entries:
     urls:
     - https://apimap.github.io/helm-charts/apimap-api-0.0.1.tgz
     version: 0.0.1
-generated: "2021-11-05T10:28:37.343718197+01:00"
+generated: "2021-11-23T14:06:07.919498842+01:00"

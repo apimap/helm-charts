@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "apimap.name" .}}-content-configmap
+data:
+  metadata-options.json: |
+    {
+      "apiOptions": {
+        "visibilityOptions": [
+          {
+            "label": "Content Missing",
+            "value": "Content Missing",
+            "description": "Content Missing",
+            "filter": "Content Missing"
+          }
+        ]
+      },
+      "apiVersionOptions": {
+        "releaseStatusOptions": [
+          {
+            "label": "Content Missing",
+            "value": "Content Missing",
+            "description": "Content Missing",
+            "filter": "Content Missing"
+          }
+        ]
+      },
+      "organizationOptions": {
+        "architectureLayerOptions": [
+          {
+            "label": "Content Missing",
+            "value": "Content Missing",
+            "description": "Content Missing",
+            "filter": "Content Missing"
+          }
+        ],
+        "businessUnitOptions": [
+          {
+            "label": "Content Missing",
+            "value": "Content Missing",
+            "description": "Content Missing",
+            "filter": "Content Missing"
+          }
+        ]
+      }
+    }
+

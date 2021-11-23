@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "apimap.name" .}}-deployment
+  labels:
+    app: {{ template "apimap.name" .}}-portal
+    role: frontend
+    supplier: apimap.io
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ template "apimap.name" .}}-portal
+  template:
+    metadata:
+      labels:
+        app: {{ template "apimap.name" .}}-portal
+        role: frontend
+    spec:
+      volumes:
+        - name: metadata-options
+          configMap:
+            name: {{ template "apimap.name" .}}-content-configmap
+            items:
+              - key: metadata-options.json
+                path: metadata-options.json
+      containers:
+        - name: {{ template "apimap.name" .}}-portal
+          image: apimap/portal:latest
+          imagePullPolicy: Always
+          ports:
+            - name: public
+              containerPort: {{ template "apimap.targetPort" . }}
+          volumeMounts:
+            - name: metadata-options
+              mountPath: /app/dist/content/metadata-options.json
+              subPath: metadata-options.json
