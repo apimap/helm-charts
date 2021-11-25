@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: {{ template "apimap.name" .}}-api
-          image: apimap/api:1.0.0
+          image: apimap/api:1.0.1
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

@@ -4,7 +4,7 @@ entries:
   - annotations:
       artifacthub.io/images: |
         - name: apimap
-          image: apimap/api:1.0.0
+          image: apimap/api:1.0.1
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
         - name: Chart Source
@@ -12,11 +12,48 @@ entries:
         - name: Apimap.io
           url: http://apimap.io
     apiVersion: v2
-    appVersion: 1.0.0
-    created: "2021-11-25T12:34:11.8546651+01:00"
+    appVersion: 1.0.1
+    created: "2021-11-25T17:58:54.163515518+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
-    digest: 609b49742bbeac06790d6b0e21ac04047ad95317da54c4df4c8ac215198ca863
+    digest: cd599bf46d2d91d7b9bc1e8182d674c055da788705c7ab65b2a9e1b7a517e129
+    home: http://apimap.io
+    keywords:
+    - api
+    - registry
+    - catalog
+    - hub
+    - apimap.io
+    - search
+    - overview
+    maintainers:
+    - email: magnus.sulland@telenor.no
+      name: Magnus Sulland
+    name: apimap-api
+    sources:
+    - https://github.com/apimap/java-api
+    - https://github.com/apimap
+    - https://hub.docker.com/r/apimap/api
+    type: application
+    urls:
+    - https://apimap.github.io/helm-charts/apimap-api-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/images: |
+        - name: apimap
+          image: apimap/api:1.0.1
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/apimap/helm-charts
+        - name: Apimap.io
+          url: http://apimap.io
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2021-11-25T17:58:54.161980537+01:00"
+    description: Apimap.io is a centralized API registry. Creating a single place
+      for discoverability, reuse and sharing of knowledge across an organization.
+    digest: 9a19b6faad0f735f7d049479003e03ca21759a8a668f90fbf7a5beba82188820
     home: http://apimap.io
     keywords:
     - api
@@ -50,7 +87,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-25T12:34:11.853684114+01:00"
+    created: "2021-11-25T17:58:54.160484267+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 794090e6d51d03edbb9cfa43f56eb0376f6b86fa08cc113799be9e58f7f0060c
@@ -87,7 +124,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-25T12:34:11.85282732+01:00"
+    created: "2021-11-25T17:58:54.159081727+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: efced988641eff95d87179fd9758dd54063506eb0f726ccdcfe153535a75dfb4
@@ -124,7 +161,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-25T12:34:11.851904875+01:00"
+    created: "2021-11-25T17:58:54.157770328+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: f2fac5a496a0313fb2c9c0c080e045c37ce181b2a9af5c4859698d842b34e24e
@@ -161,7 +198,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-25T12:34:11.85094279+01:00"
+    created: "2021-11-25T17:58:54.156283867+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 6b508cc5e65685a718728b1817fc0abb147c6b0694f22c39b5b5a4751e3fa71c
@@ -186,4 +223,4 @@ entries:
     urls:
     - https://apimap.github.io/helm-charts/apimap-api-0.0.1.tgz
     version: 0.0.1
-generated: "2021-11-25T12:34:11.849590382+01:00"
+generated: "2021-11-25T17:58:54.153009734+01:00"
