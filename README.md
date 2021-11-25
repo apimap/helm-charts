@@ -1,4 +1,4 @@
-Apimap.io API Helm Charts
+Apimap.io Helm Charts
 ===
 
 🎉 **Welcome** 🎉
@@ -18,7 +18,7 @@ network is constructed.
 ## Table of Contents
 
 * [Project Components](#project-components)
-* [Build and Run](#build-and-run)
+* [About](#About)
 * [Contributing](#contributing)
 
 I want to know more of the technical details and implementation guides: [DEVELOPER.md](DEVELOPER.md)
@@ -34,20 +34,10 @@ find useful, create the rest to custom fit your organization.
 - A **Jenkins plugin** to automate information parsing and upload
 - A **CLI** to enable manual information uploads
 
-## Build and Run
+## About
 ___
 
-This library contains the rest client that the Jenkins plugin and CLI uses to communicate with the service API. 
-
-#### Build JAR
-
-Based on Java the easiest way to build the artifact is using **build**
-
-> gradlew build
-
-#### Requirements
-
-Java version 8 or newer. 
+This library contains HELM Charts used to run the different services. 
 
 ## Contributing
 ___
