@@ -23,7 +23,7 @@ log:
 # OpenApi specification
 openapi:
   # Enabled OpenApi specification endpoint to all users
-  enabled: true
+  enabled: false
 # Exposure Configuration
 exposure:
   # NodePort Configuration
