@@ -68,6 +68,38 @@
         }
       },
       "required": ["copyright", "faq", "support"]
+    },
+    "exposure": {
+      "type": "object",
+      "properties": {
+        "nodePort": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Use nodeport",
+              "type": "boolean",
+              "default": false
+            }
+          },
+          "required": ["enabled"]
+        },
+        "ingress": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Use Ingress",
+              "type": "boolean",
+              "default": false
+            },
+            "host": {
+              "title": "Domain / hostname to be used",
+              "type": "string"
+            }
+          },
+          "required": ["enabled"]
+        }
+      },
+      "required": ["nodePort", "ingress"]
     }
   }
 }

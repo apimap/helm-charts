@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ template "apimap.name" .}}-configmap
+  namespace: {{ .Release.Namespace }}
 data:
   config.json: |
     {{ "{" }}

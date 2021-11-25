@@ -20,5 +20,19 @@ storage:
 log:
   # service log level definition
   level: INFO
+# OpenApi specification
 openapi:
+  # Enabled OpenApi specification endpoint to all users
   enabled: true
+# Exposure Configuration
+exposure:
+  # NodePort Configuration
+  nodePort:
+    # Enable nodeport
+    enabled: false
+  # Ingress Configuration
+  ingress:
+    # Enable ingress
+    enabled: true
+    # Hostname to be used
+    host: ""

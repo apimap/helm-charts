@@ -6,3 +6,7 @@
 {{- printf "8080" -}}
 {{- end -}}
 
+{{- define "apimap.port" -}}
+{{- printf "80" -}}
+{{- end -}}
+

@@ -2,12 +2,13 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: {{ template "apimap.name" .}}-statefulset
+  namespace: {{ .Release.Namespace }}
   labels:
     app: {{ template "apimap.name" .}}-api
     role: api
     supplier: apimap.io
 spec:
-  serviceName: {{ template "apimap.name" .}}-api
+  serviceName: {{ template "apimap.name" .}}-service
   replicas: 1
   selector:
     matchLabels:
@@ -16,15 +17,16 @@ spec:
     metadata:
       labels:
         app: {{ template "apimap.name" .}}-api
-        role: api
     spec:
       containers:
         - name: {{ template "apimap.name" .}}-api
-          image: apimap/api:latest
-          imagePullPolicy: Always
+          image: apimap/api:1.0.0
+          imagePullPolicy: IfNotPresent
           ports:
-            - name: public
+            - name: http
               containerPort: {{ template "apimap.targetPort" .}}
+            - name: https
+              containerPort: {{ template "apimap.targetPort" . }}
           env:
             - name: SPRING_APPLICATION_JSON
               valueFrom:
