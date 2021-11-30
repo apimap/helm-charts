@@ -1,3 +1,4 @@
+{{ if not .Values.content.metadataOptions }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -44,4 +45,4 @@ data:
         ]
       }
     }
-
+{{ end }}

@@ -13,10 +13,10 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.1
-    created: "2021-11-30T14:27:26.75137888+01:00"
+    created: "2021-11-30T15:46:11.293691925+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
-    digest: 7d203888e956bf54c57dbf773240145b8eff5944be1d4164ae6bbb6924314d61
+    digest: d106a97d291c03246e159c61448da19bfc52e3df22311d03b5c4c43fbe876145
     home: http://apimap.io
     keywords:
     - api
@@ -50,7 +50,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.1
-    created: "2021-11-30T14:27:26.750286039+01:00"
+    created: "2021-11-30T15:46:11.293044261+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: cd599bf46d2d91d7b9bc1e8182d674c055da788705c7ab65b2a9e1b7a517e129
@@ -87,7 +87,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.1
-    created: "2021-11-30T14:27:26.749288539+01:00"
+    created: "2021-11-30T15:46:11.292307617+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 9a19b6faad0f735f7d049479003e03ca21759a8a668f90fbf7a5beba82188820
@@ -124,7 +124,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-30T14:27:26.748142137+01:00"
+    created: "2021-11-30T15:46:11.290880438+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 794090e6d51d03edbb9cfa43f56eb0376f6b86fa08cc113799be9e58f7f0060c
@@ -161,7 +161,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-30T14:27:26.746896415+01:00"
+    created: "2021-11-30T15:46:11.289606021+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: efced988641eff95d87179fd9758dd54063506eb0f726ccdcfe153535a75dfb4
@@ -198,7 +198,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-30T14:27:26.745587951+01:00"
+    created: "2021-11-30T15:46:11.288277953+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: f2fac5a496a0313fb2c9c0c080e045c37ce181b2a9af5c4859698d842b34e24e
@@ -235,7 +235,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-30T14:27:26.744317608+01:00"
+    created: "2021-11-30T15:46:11.286907514+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 6b508cc5e65685a718728b1817fc0abb147c6b0694f22c39b5b5a4751e3fa71c
@@ -273,10 +273,10 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-11-30T14:27:26.752412571+01:00"
+    created: "2021-11-30T15:46:11.294296619+01:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
-    digest: e62af14efd0b40624cfc038b889578f3d134c2e8f4cdb4e663d637ced9af9153
+    digest: f0f2e23b1e5c5d46fdc7008cf738df2dcea94d7fa96b4c8c564d721bcabab839
     home: http://apimap.io
     keywords:
     - api
@@ -298,4 +298,4 @@ entries:
     urls:
     - https://apimap.github.io/helm-charts/apimap-portal-0.0.1.tgz
     version: 0.0.1
-generated: "2021-11-30T14:27:26.742343178+01:00"
+generated: "2021-11-30T15:46:11.284828161+01:00"
