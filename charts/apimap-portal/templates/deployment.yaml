@@ -35,3 +35,10 @@ spec:
             - name: metadata-options
               mountPath: /app/dist/content/metadata-options.json
               subPath: metadata-options.json
+          env:
+            - name: "API_URL"
+              value: {{ .Values.urls.api }}
+            - name: "DEVELOPER_URL"
+              value: {{ .Values.urls.developer }}
+            - name: "TITLE"
+              value: {{ .Values.branding.title }}

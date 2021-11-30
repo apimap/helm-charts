@@ -3,67 +3,61 @@
   "title": "Apimap.io Chart JSON Schema",
   "type": "object",
   "properties": {
-    "log": {
+    "urls": {
       "type": "object",
       "properties": {
-        "level": {
-          "title": "Log level",
-          "type": "string",
-          "default": "info",
-          "enum": ["TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL", "OFF"]
+        "api": {
+          "title": "API URL",
+          "type": "string"
+        },
+        "developer": {
+          "title": "Developer Portal URL",
+          "type": "string"
         }
       },
-      "required": ["level"]
+      "required": ["api", "developer"]
     },
-    "storage": {
+    "branding": {
       "type": "object",
       "properties": {
-        "nitrite": {
+        "title": {
+          "title": "Title of the startpage",
+          "type": "string",
+          "default": "Apimap.io"
+        }
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "properties": {
+        "nodePort": {
           "type": "object",
           "properties": {
-            "mountingPoint": {
-              "title": "Root folder used to store all NoSQL files",
-              "type": "string",
-              "default": "/var/apimap"
-            },
             "enabled": {
-              "title": "Enable NITRITE (NoSQL) support",
+              "title": "Use nodeport",
               "type": "boolean",
               "default": false
             }
           },
-          "required":["enabled"]
-        }
-      }
-    },
-    "openapi": {
-      "type": "object",
-      "properties":{
-        "enabled": {
-          "title": "Enable OpenAPI support",
-          "description": "If enabled a openapi document is available at <base url>/documentation/openapi3",
-          "type": "boolean",
-          "default": false
-        }
-      }
-    },
-    "metadata": {
-      "type": "object",
-      "properties": {
-        "copyright": {
-          "title": "Copyright notice on the content of the catalog",
-          "type": "string"
+          "required": ["enabled"]
         },
-        "faq": {
-          "title": "Very short description and URL to the place the organization has stored information about this solution, implementation and usage.",
-          "type": "string"
-        },
-        "support": {
-          "title": "Very short description and URL to where support for this solution is to be found.",
-          "type": "string"
+        "ingress": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Use Ingress",
+              "type": "boolean",
+              "default": false
+            },
+            "host": {
+              "title": "Domain / hostname to be used",
+              "type": "string"
+            }
+          },
+          "required": ["enabled"]
         }
       },
-      "required": ["copyright", "faq", "support"]
+      "required": ["nodePort", "ingress"]
     }
   }
 }

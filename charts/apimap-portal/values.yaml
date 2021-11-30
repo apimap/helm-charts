@@ -1,22 +1,22 @@
-# metadata to be appended to each API response
-metadata:
-  # copyright notice of the company that owns this installment and the contained data
-  copyright: ""
-  # faq URL to view more about the catalog install
-  faq: ""
-  # support channel link to where users of the catalog can get help
-  support: ""
-# storage of the content include in the catalog
-storage:
-  # nitrite enables the catalog to be completely self-contained including the data storage
-  nitrite:
-    # persistence volume path
-    path: "/var/apimap"
-    # enabled nitrite support
+# URLs to other services
+urls:
+  # API URL
+  api: ""
+  # Developer Portal URL
+  developer: ""
+# Branding options
+branding:
+  # Title of the startpage
+  title: "Apimap.io"
+# Exposure Configuration
+exposure:
+  # NodePort Configuration
+  nodePort:
+    # Enable nodeport
+    enabled: false
+  # Ingress Configuration
+  ingress:
+    # Enable ingress
     enabled: true
-# log level
-log:
-  # service log level definition
-  level: INFO
-openapi:
-  enabled: true
+    # Hostname to be used
+    host: ""
