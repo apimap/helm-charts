@@ -27,6 +27,15 @@
         }
       }
     },
+    "content": {
+      "type": "object",
+      "properties": {
+        "metadataOptions": {
+          "title": "Metadata Options Config map name",
+          "type": "string"
+        }
+      }
+    },
     "exposure": {
       "type": "object",
       "properties": {

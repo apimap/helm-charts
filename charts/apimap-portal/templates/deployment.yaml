@@ -20,13 +20,13 @@ spec:
       volumes:
         - name: metadata-options
           configMap:
-            name: {{ template "apimap.name" .}}-content-configmap
+            name: {{ if .Values.content.metadataOptions }}{{ .Values.content.metadataOptions }}{{- else }}{{ template "apimap.name" .}}-content-configmap{{- end }}
             items:
               - key: metadata-options.json
                 path: metadata-options.json
       containers:
         - name: {{ template "apimap.name" .}}-portal
-          image: apimap/portal:latest
+          image: apimap/portal:1.0.0
           imagePullPolicy: Always
           ports:
             - name: public

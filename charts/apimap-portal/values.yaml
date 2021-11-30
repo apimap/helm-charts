@@ -8,6 +8,10 @@ urls:
 branding:
   # Title of the startpage
   title: "Apimap.io"
+# Content
+content:
+  # Metadata Options Config map name
+  metadataOptions: ""
 # Exposure Configuration
 exposure:
   # NodePort Configuration
