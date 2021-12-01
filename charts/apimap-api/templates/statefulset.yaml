@@ -18,6 +18,9 @@ spec:
       labels:
         app: {{ template "apimap.name" .}}-api
     spec:
+      securityContext:
+        fsGroup: 101
+        runAsUser: 100
       containers:
         - name: {{ template "apimap.name" .}}-api
           image: apimap/api:1.0.1
