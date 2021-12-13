@@ -23,7 +23,7 @@ spec:
         runAsUser: 100
       containers:
         - name: {{ template "apimap.name" .}}-api
-          image: apimap/api:1.0.1
+          image: apimap/api:1.0.3
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
