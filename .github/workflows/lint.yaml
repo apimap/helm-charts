@@ -20,5 +20,7 @@ jobs:
           version: v3.4.0
       - name: Run apimap-api chart-testing (lint)
         run: helm lint charts/apimap-api/
-      - name: Run apimap-api chart-testing (lint)
+      - name: Run apimap-portal chart-testing (lint)
         run: helm lint charts/apimap-portal/
+      - name: Run apimap-developer chart-testing (lint)
+        run: helm lint charts/apimap-developer/

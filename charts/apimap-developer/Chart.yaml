@@ -1,0 +1,32 @@
+apiVersion: v2
+name: apimap-developer
+description: "Apimap.io is a centralized API registry. Creating a single place for discoverability, reuse and sharing of knowledge across an organization."
+type: application
+keywords:
+  - api
+  - registry
+  - catalog
+  - hub
+  - apimap.io
+  - search
+  - overview
+home: http://apimap.io
+sources:
+  - https://github.com/apimap/javascript-developer
+  - https://github.com/apimap
+  - https://hub.docker.com/r/apimap/developer
+maintainers:
+  - name: Magnus Sulland
+    email: magnus.sulland@telenor.no
+appVersion: "1.0.0"
+version: "0.0.1"
+annotations:
+  artifacthub.io/links: |
+    - name: Chart Source
+      url: https://github.com/apimap/helm-charts
+    - name: Apimap.io
+      url: http://apimap.io
+  artifacthub.io/images: |
+    - name: apimap
+      image: apimap/developer:1.0.0
+  artifacthub.io/license: Apache-2.0

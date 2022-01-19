@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "apimap.name" .}}-deployment
+  labels:
+    app: {{ template "apimap.name" .}}-developer
+    role: frontend
+    supplier: apimap.io
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ template "apimap.name" .}}-developer
+  template:
+    metadata:
+      labels:
+        app: {{ template "apimap.name" .}}-developer
+        role: frontend
+    spec:
+      volumes:
+        - name: metadata-options
+          configMap:
+            name: {{ if .Values.content.metadataOptions }}{{ .Values.content.metadataOptions }}{{- else }}{{ template "apimap.name" .}}-content-configmap{{- end }}
+            items:
+              - key: metadata-options.json
+                path: metadata-options.json
+      containers:
+        - name: {{ template "apimap.name" .}}-developer
+          image: apimap/developer:1.0.0
+          imagePullPolicy: Always
+          ports:
+            - name: public
+              containerPort: {{ template "apimap.targetPort" . }}
+          volumeMounts:
+            - name: metadata-options
+              mountPath: /app/dist/content/metadata-options.json
+              subPath: metadata-options.json
+          env:
+            - name: "APIMAP_API_URL"
+              value: {{ .Values.urls.api }}
+            - name: "APIMAP_PORTAL_URL"
+              value: {{ .Values.urls.portal }}
+            - name: "APIMAP_TITLE"
+              value: {{ .Values.branding.title }}
+            - name: "APIMAP_SUPPORT"
+              value: {{ .Values.branding.support }}

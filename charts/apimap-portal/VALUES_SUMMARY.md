@@ -2,7 +2,7 @@
 
 ## Configuration
 
-The following tables list the configurable parameters of the Apimap.io API chart and their default values.
+The following tables list the configurable parameters of the Apimap.io Portal chart and their default values.
 
 ### URLs
 

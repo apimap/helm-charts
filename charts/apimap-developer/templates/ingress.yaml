@@ -1,0 +1,21 @@
+{{ if .Values.exposure.ingress.enabled }}
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: {{ template "apimap.name" .}}-ingress
+  namespace: {{ .Release.Namespace }}
+  labels:
+    host: {{ .Values.exposure.ingress.host }}
+spec:
+  rules:
+    - host: {{ .Values.exposure.ingress.host }}
+      http:
+        paths:
+          - backend:
+              service:
+                name: {{ template "apimap.name" .}}-service
+                port:
+                  number: {{ template "apimap.targetPort" .}}
+            path: /
+            pathType: Prefix
+{{ end }}

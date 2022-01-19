@@ -1,0 +1,28 @@
+# URLs to other services
+urls:
+  # API URL
+  api: ""
+  # Portal URL
+  portal: ""
+# Branding options
+branding:
+  # Title of the startpage
+  title: "Apimap.io"
+  # Support text featured in every section of the developer portal
+  support: "Visit https://github.com/apimap to ask questions and contribute to the project"
+# Content
+content:
+  # Metadata Options Config map name
+  metadataOptions: ""
+# Exposure Configuration
+exposure:
+  # NodePort Configuration
+  nodePort:
+    # Enable nodeport
+    enabled: true
+  # Ingress Configuration
+  ingress:
+    # Enable ingress
+    enabled: false
+    # Hostname to be used
+    host: ""

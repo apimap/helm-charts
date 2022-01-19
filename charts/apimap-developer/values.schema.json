@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Apimap.io Chart JSON Schema",
+  "type": "object",
+  "properties": {
+    "urls": {
+      "type": "object",
+      "properties": {
+        "api": {
+          "title": "API URL",
+          "type": "string"
+        },
+        "portal": {
+          "title": "Portal URL",
+          "type": "string"
+        }
+      },
+      "required": ["api", "portal"]
+    },
+    "branding": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Title of the startpage",
+          "type": "string",
+          "default": "Apimap.io"
+        },
+        "support": {
+          "title": "A short descriptive text giving the users a link to where they can get support from the organization implementing Apimap.",
+          "type": "string",
+          "default": "Visit https://github.com/apimap to ask questions and contribute to the project"
+        }
+      },
+      "required": ["title", "support"]
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "metadataOptions": {
+          "title": "Metadata Options Config map name",
+          "type": "string"
+        }
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "properties": {
+        "nodePort": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Use nodeport",
+              "type": "boolean",
+              "default": false
+            }
+          },
+          "required": ["enabled"]
+        },
+        "ingress": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Use Ingress",
+              "type": "boolean",
+              "default": false
+            },
+            "host": {
+              "title": "Domain / hostname to be used",
+              "type": "string"
+            }
+          },
+          "required": ["enabled"]
+        }
+      },
+      "required": ["nodePort", "ingress"]
+    }
+  }
+}
