@@ -3,6 +3,7 @@ Changelog
 
 | Date       | Description                         |
 |------------|-------------------------------------|
+| 25.02.2022 | Updated to api docker image v 1.2.0 |
 | 25.02.2022 | Updated to developer docker image v 1.1.0 |
 | 7.2.2022   | Updated to api docker image v 1.1.1 |
 | 7.2.2022   | Updated to api docker image v 1.1.0 |
