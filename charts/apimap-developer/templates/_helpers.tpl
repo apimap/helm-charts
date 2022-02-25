@@ -10,3 +10,7 @@
 {{- printf "80" -}}
 {{- end -}}
 
+{{- define "apimap.image" -}}
+{{- printf "apimap/developer:1.1.0" -}}
+{{- end -}}
+

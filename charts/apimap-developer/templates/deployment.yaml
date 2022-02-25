@@ -26,7 +26,7 @@ spec:
                 path: metadata-options.json
       containers:
         - name: {{ template "apimap.name" .}}-developer
-          image: apimap/developer:1.0.0
+          image: {{ template "apimap.image" }}
           imagePullPolicy: Always
           ports:
             - name: public
