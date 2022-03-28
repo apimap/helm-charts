@@ -29,9 +29,15 @@ The following tables list the configurable parameters of the Apimap.io API chart
 
 ### Log
 
-| Parameter                         | Description                          | Default                                   | Required |
-| --------------------------------- | ------------------------------------ | ----------------------------------------- | -------- |
-| log.level                         | Log level to be used by the service  | INFO | Required
+**Note:** This also includes statistics and health monitoring.
+
+| Parameter | Description                                  | Default | Required |
+|-----------|----------------------------------------------|---------|----------|
+| log.level | Log level to be used by the service          | INFO    | Required |
+| log.endpoints.statistics.enabled | Enable http(s) request logging to stdout     | false ||
+| log.endpoints.health.enabled | Enable health endpoints at /actuator/health  | false ||
+
+
 
 ### Exposure
 

@@ -10,6 +10,7 @@ data:
       {{- printf "\"apimap.metadata.copyright\": \"%s\"," .Values.metadata.copyright -}}
       {{- printf "\"apimap.metadata.faq\": \"%s\"," .Values.metadata.faq -}}
       {{- printf "\"apimap.metadata.support\": \"%s\"," .Values.metadata.support -}}
-      {{- printf "\"apimap.openapi.enabled\": \"%v\"" .Values.openapi.enabled -}},
-      {{- printf "\"logging.level.root\": \"%s\"" .Values.log.level -}}
+      {{- printf "\"apimap.openapi.enabled\": \"%v\"," .Values.openapi.enabled -}}
+      {{- printf "\"logging.level.root\": \"%s\"," .Values.log.level -}}
+      {{- printf "\"management.endpoints.web.exposure.include:\": \"%s\"" (include "apimap.services" .) -}}
     {{ "}" }}

@@ -11,6 +11,18 @@
 {{- end -}}
 
 {{- define "apimap.image" -}}
-{{- printf "apimap/api:1.2.0" -}}
+{{- printf "apimap/api:1.3.0" -}}
 {{- end -}}
 
+{{- define "apimap.services"}}
+  {{- if .Values.log.endpoints.statistics.enabled }}
+    {{- print "metrics,httptrace" }}
+  {{- end -}}
+  {{- if .Values.log.endpoints.health.enabled }}
+    {{- if .Values.log.endpoints.statistics.enabled }}
+      {{- print ",health" -}}
+    {{- else -}}
+      {{- print "health" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

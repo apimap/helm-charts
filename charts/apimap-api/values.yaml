@@ -20,6 +20,12 @@ storage:
 log:
   # service log level definition
   level: INFO
+  # Management / Statistics endpoints
+  endpoints:
+    statistics:
+      enabled: false
+    health:
+      enabled: false
 # OpenApi specification
 openapi:
   # Enabled OpenApi specification endpoint to all users
