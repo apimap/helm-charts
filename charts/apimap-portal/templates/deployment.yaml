@@ -20,13 +20,15 @@ spec:
       volumes:
         - name: metadata-options
           configMap:
-            name: {{ if .Values.content.metadataOptions }}{{ .Values.content.metadataOptions }}{{- else }}{{ template "apimap.name" .}}-content-configmap{{- end }}
+            name: {{ if .Values.content.options }}{{ .Values.content.options }}{{- else }}{{ template "apimap.name" .}}-content-configmap{{- end }}
             items:
               - key: metadata-options.json
                 path: metadata-options.json
+              - key: search-options.json
+                path: search-options.json
       containers:
         - name: {{ template "apimap.name" .}}-portal
-          image: apimap/portal:1.0.0
+          image: apimap/portal:2.0.0
           imagePullPolicy: Always
           ports:
             - name: public
@@ -35,10 +37,15 @@ spec:
             - name: metadata-options
               mountPath: /app/dist/content/metadata-options.json
               subPath: metadata-options.json
+            - name: search-options
+              mountPath: /app/dist/content/search-options.json
+              subPath: search-options.json
           env:
-            - name: "API_URL"
+            - name: "APIMAP_API_URL"
               value: {{ .Values.urls.api }}
-            - name: "DEVELOPER_URL"
+            - name: "APIMAP_DEVELOPER_URL"
               value: {{ .Values.urls.developer }}
-            - name: "TITLE"
+            - name: "APIMAP_TITLE"
               value: {{ .Values.branding.title }}
+            - name: "APIMAP_SUPPORT"
+              value: {{ .Values.branding.support }}

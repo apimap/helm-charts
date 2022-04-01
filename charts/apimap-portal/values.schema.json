@@ -24,14 +24,20 @@
           "title": "Title of the startpage",
           "type": "string",
           "default": "Apimap.io"
+        },
+        "support": {
+          "title": "A short descriptive text giving the users a link to where they can get support from the organization implementing Apimap.",
+          "type": "string",
+          "default": "Visit https://github.com/apimap to ask questions and contribute to the project"
         }
-      }
+      },
+      "required": ["title", "support"]
     },
     "content": {
       "type": "object",
       "properties": {
-        "metadataOptions": {
-          "title": "Metadata Options Config map name",
+        "options": {
+          "title": "Metadata and Search Options Config map name",
           "type": "string"
         }
       }

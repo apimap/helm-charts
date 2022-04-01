@@ -16,6 +16,7 @@ The following tables list the configurable parameters of the Apimap.io Portal ch
 | Parameter                         | Description                          | Default                                   | Required |
 | --------------------------------- | ------------------------------------ | ----------------------------------------- | -------- |
 | branding.title                    | Page title shown to the users on the first page | "Apimap.io" | Required |
+| branding.support                  | A short descriptive text giving the users a link to where they can get support from the organization implementing Apimap. | "Visit https://github.com/apimap to ask questions and contribute to the project"  | Required |
 
 ### Exposure
 
@@ -27,6 +28,6 @@ The following tables list the configurable parameters of the Apimap.io Portal ch
 
 ### Content
 
-| Parameter                         | Description                          | Default                                   | Required |
-| --------------------------------- | ------------------------------------ | ----------------------------------------- | -------- |
-| content.metadataOptions           | Name of configmap that contanis the metadata options | | |
+| Parameter             | Description                                                     | Default                                   | Required  |
+|-----------------------|-----------------------------------------------------------------| ----------------------------------------- |-----------|
+| content.options       | Name of configmap that contanis the metadata and search options | | Required  |

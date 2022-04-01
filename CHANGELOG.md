@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 01.04.2022
+- Update to portal image v 2.0.0 with new parameters
+
 ### 28.03.2022
 - Updated to api docker image v 1.3.0
 - Breaking changes on exposed api endpoint configuration

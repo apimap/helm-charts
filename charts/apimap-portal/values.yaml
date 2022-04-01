@@ -8,10 +8,12 @@ urls:
 branding:
   # Title of the startpage
   title: "Apimap.io"
+  # Support text featured in every section of the developer portal
+  support: "Visit https://github.com/apimap to ask questions and contribute to the project"
 # Content
 content:
-  # Metadata Options Config map name
-  metadataOptions: ""
+  # Metadata and Search Options Config map name
+  options: ""
 # Exposure Configuration
 exposure:
   # NodePort Configuration
