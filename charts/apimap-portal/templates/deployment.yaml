@@ -18,7 +18,7 @@ spec:
         role: frontend
     spec:
       volumes:
-        - name: metadata-options
+        - name: options
           configMap:
             name: {{ if .Values.content.options }}{{ .Values.content.options }}{{- else }}{{ template "apimap.name" .}}-content-configmap{{- end }}
             items:
@@ -34,12 +34,8 @@ spec:
             - name: public
               containerPort: {{ template "apimap.targetPort" . }}
           volumeMounts:
-            - name: metadata-options
-              mountPath: /app/dist/content/metadata-options.json
-              subPath: metadata-options.json
-            - name: search-options
-              mountPath: /app/dist/content/search-options.json
-              subPath: search-options.json
+            - name: options
+              mountPath: /app/dist/content
           env:
             - name: "APIMAP_API_URL"
               value: {{ .Values.urls.api }}
