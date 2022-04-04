@@ -1,8 +1,12 @@
 Changelog
 ===
 
+### 04.04.2022
+- Namespace bugfix
+
 ### 01.04.2022
 - Update to portal image v 2.0.0 with new parameters
+- Updated to developer docker image v 1.1.1
 
 ### 28.03.2022
 - Updated to api docker image v 1.3.0
