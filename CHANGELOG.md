@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 21.04.2022
+- Update to portal image v 2.0.1 
+
 ### 04.04.2022
 - Namespace bugfix
 
