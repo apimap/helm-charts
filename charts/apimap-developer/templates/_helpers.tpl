@@ -11,6 +11,6 @@
 {{- end -}}
 
 {{- define "apimap.image" -}}
-{{- printf "apimap/developer:1.1.1" -}}
+{{- printf "apimap/developer:1.1.2" -}}
 {{- end -}}
 

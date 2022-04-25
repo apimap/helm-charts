@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 25.04.2022
+- Updated to developer docker image v 1.1.2
+
 ### 21.04.2022
 - Update to portal image v 2.0.1 
 
