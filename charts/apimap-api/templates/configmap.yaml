@@ -6,6 +6,10 @@ metadata:
 data:
   config.json: |
     {{ "{" }}
+      {{- printf "\"mongodb.enabled\": \"%s\"," .Values.storage.mongodb.enabled -}}
+      {{- printf "\"mongodb.database-name\": \"%s\"," .Values.storage.mongodb.databaseName -}}
+      {{- printf "\"mongodb.uri\": \"%s\"," .Values.storage.mongodb.uri -}}
+      {{- printf "\"nitrite.enabled\": \"%s\"," .Values.storage.nitrite.enabled -}}
       {{- printf "\"nitrite.filePath\": \"%s\"," .Values.storage.nitrite.path -}}
       {{- printf "\"apimap.metadata.copyright\": \"%s\"," .Values.metadata.copyright -}}
       {{- printf "\"apimap.metadata.faq\": \"%s\"," .Values.metadata.faq -}}

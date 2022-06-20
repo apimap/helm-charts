@@ -13,9 +13,17 @@ storage:
     # persistence volume path
     path: "/var/apimap"
     # enabled nitrite support
-    enabled: true
+    enabled: false
     # storage class to be used
     storageClass: ""
+  # mongodb enables use of a dedicated db solution
+  mongodb:
+    # enabled mongodb support
+    enabled: false
+    # database name to be used
+    databaseName: "apimap"
+    # connection string to be used
+    uri: "mongodb://apimapUser:<password>@localhost:27017/apimap"
 # log level
 log:
   # service log level definition

@@ -43,6 +43,27 @@
     "storage": {
       "type": "object",
       "properties": {
+        "mongodb": {
+          "type": "object",
+          "properties": {
+            "uri": {
+              "title": "MongoDB Connection String defined using the 'Connection String URI Format'",
+              "type": "string",
+              "default": "mongodb://apimapUser:<password>@localhost:27017/apimap"
+            },
+            "enabled": {
+              "title": "Enable MongoDB (NoSQL) support",
+              "type": "boolean",
+              "default": false
+            },
+            "databaseName": {
+              "title": "The database to be used",
+              "type": "string",
+              "default": "apimap"
+            }
+          },
+          "required":["enabled"]
+        },
         "nitrite": {
           "type": "object",
           "properties": {

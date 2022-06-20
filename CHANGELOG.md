@@ -1,6 +1,10 @@
 Changelog
 ===
 
+### 20.06.2022
+- Updated to api docker image v 1.4.0
+- Added mongodb parameters to config
+
 ### 25.04.2022
 - Updated to developer docker image v 1.1.2
 
