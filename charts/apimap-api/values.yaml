@@ -19,7 +19,7 @@ storage:
   # mongodb enables use of a dedicated db solution
   mongodb:
     # enabled mongodb support
-    enabled: false
+    enabled:  true
     # database name to be used
     databaseName: "apimap"
     # connection string to be used

@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 21.06.2022
+- Fixed configmap boolean format bug
+
 ### 20.06.2022
 - Updated to api docker image v 1.4.0
 - Added mongodb parameters to config
