@@ -1,6 +1,10 @@
 Changelog
 ===
 
+### 22.06.2022
+- Updated to api docker image v 1.4.1
+- Added encrypted mongodb uri support
+
 ### 21.06.2022
 - Fixed configmap boolean format bug
 

@@ -47,9 +47,20 @@
           "type": "object",
           "properties": {
             "uri": {
-              "title": "MongoDB Connection String defined using the 'Connection String URI Format'",
-              "type": "string",
-              "default": "mongodb://apimapUser:<password>@localhost:27017/apimap"
+              "title": "MongoDB Connection String defined using the 'Connection String URI Format' e.g. mongodb://apimapUser:<password>@localhost:27017/apimap",
+              "type": "object",
+              "properties": {
+                "secretKey": {
+                  "title": "Name of the secret to be used",
+                  "type": "string",
+                  "default": ""
+                },
+                "secretName": {
+                  "title": "Name of the key inside the secret to be used",
+                  "type": "string",
+                  "default": ""
+                }
+              }
             },
             "enabled": {
               "title": "Enable MongoDB (NoSQL) support",
@@ -114,6 +125,21 @@
         }
       },
       "required": ["copyright", "faq", "support"]
+    },
+    "resources":{
+      "type": "object",
+      "properties": {
+        "pods": {
+          "type": "object",
+          "properties": {
+            "replicas": {
+              "title": "Number of pods to be used if mongodb is the storage system",
+              "type": "number",
+              "default": "2"
+            }
+          }
+        }
+      }
     },
     "exposure": {
       "type": "object",

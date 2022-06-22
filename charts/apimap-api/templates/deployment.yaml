@@ -1,16 +1,15 @@
-{{- if .Values.storage.nitrite.enabled -}}
+{{- if .Values.storage.mongodb.enabled -}}
 apiVersion: apps/v1
-kind: StatefulSet
+kind: Deployment
 metadata:
-  name: {{ template "apimap.name" .}}-statefulset
+  name: {{ template "apimap.name" .}}-deployment
   namespace: {{ .Release.Namespace }}
   labels:
     app: {{ template "apimap.name" .}}-api
     role: api
     supplier: apimap.io
 spec:
-  serviceName: {{ template "apimap.name" .}}-service
-  replicas: 1
+  replicas: {{ .Values.resources.pods.replicas }}
   selector:
     matchLabels:
       app: {{ template "apimap.name" .}}-api
@@ -21,9 +20,6 @@ spec:
       annotations:
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
     spec:
-      securityContext:
-        fsGroup: 467
-        runAsUser: 467
       containers:
         - name: {{ template "apimap.name" .}}-api
           image: {{ template "apimap.image" }}
@@ -39,11 +35,9 @@ spec:
                 configMapKeyRef:
                   name: {{ template "apimap.name" .}}-configmap
                   key: config.json
-          volumeMounts:
-            - name: {{ template "apimap.name" .}}-nitrite-path
-              mountPath: {{ .Values.storage.nitrite.path }}
-      volumes:
-        - name: {{ template "apimap.name" .}}-nitrite-path
-          persistentVolumeClaim:
-            claimName: {{ template "apimap.name" .}}-claim
+            - name: MONGODB_URI
+              valueFrom:
+                secretKeyRef:
+                  key: {{ .Values.storage.mongodb.uri.secretKey }}
+                  name: {{ .Values.storage.mongodb.uri.secretName }}
 {{ end }}

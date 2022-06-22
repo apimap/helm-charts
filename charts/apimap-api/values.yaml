@@ -22,8 +22,12 @@ storage:
     enabled:  true
     # database name to be used
     databaseName: "apimap"
-    # connection string to be used
-    uri: "mongodb://apimapUser:<password>@localhost:27017/apimap"
+    # An encrypted connection string to be used
+    uri:
+      # name of the secret to be inserted
+      secretName: ""
+      # name of the secret key to be used
+      secretKey: ""
 # log level
 log:
   # service log level definition
@@ -50,3 +54,9 @@ exposure:
     enabled: true
     # Hostname to be used
     host: ""
+# Resources to be used when running the system
+resources:
+  # pods configuration
+  pods:
+    # Replicas of the code to be run
+    replicas: 2
