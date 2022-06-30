@@ -18,8 +18,8 @@ sources:
 maintainers:
   - name: Magnus Sulland
     email: magnus.sulland@telenor.no
-appVersion: "2.0.1"
-version: "2.0.2"
+appVersion: "2.0.2"
+version: "2.0.3"
 annotations:
   artifacthub.io/links: |
     - name: Chart Source
@@ -28,5 +28,5 @@ annotations:
       url: http://apimap.io
   artifacthub.io/images: |
     - name: apimap
-      image: apimap/portal:2.0.1
+      image: apimap/portal:2.0.2
   artifacthub.io/license: Apache-2.0

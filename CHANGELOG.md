@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 30.06.2022
+- Update to portal image v 2.0.2
+
 ### 28.06.2022
 - Updated to api docker image v 1.4.2
 
