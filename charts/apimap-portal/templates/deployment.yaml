@@ -28,7 +28,7 @@ spec:
                 path: search-options.json
       containers:
         - name: {{ template "apimap.name" .}}-portal
-          image: apimap/portal:2.0.2
+          image: apimap/portal:2.0.3
           imagePullPolicy: Always
           ports:
             - name: public
