@@ -16,7 +16,7 @@
 
 {{- define "apimap.services"}}
   {{- if .Values.log.endpoints.statistics.enabled }}
-    {{- print "metrics,httptrace" }}
+    {{- print "metrics,httptrace,prometheus" }}
   {{- end -}}
   {{- if .Values.log.endpoints.health.enabled }}
     {{- if .Values.log.endpoints.statistics.enabled }}

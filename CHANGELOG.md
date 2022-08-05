@@ -2,6 +2,9 @@ Changelog
 ===
 
 ### 05.08.2022
+- Added prometheus metrics to API
+
+### 05.08.2022
 - Update to api image v1.8.0
 - Added TLS support to all services
 
