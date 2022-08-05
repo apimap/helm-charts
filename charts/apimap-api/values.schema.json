@@ -144,6 +144,21 @@
     "exposure": {
       "type": "object",
       "properties": {
+        "tls": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Use tls",
+              "type": "boolean",
+              "default": false
+            },
+            "secretName": {
+              "title": "TLS secret name",
+              "type": "string"
+            }
+          },
+          "required": ["enabled"]
+        },
         "nodePort": {
           "type": "object",
           "properties": {
@@ -171,7 +186,7 @@
           "required": ["enabled"]
         }
       },
-      "required": ["nodePort", "ingress"]
+      "required": ["nodePort", "ingress", "tls"]
     }
   }
 }

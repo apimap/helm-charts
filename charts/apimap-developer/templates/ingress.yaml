@@ -7,6 +7,12 @@ metadata:
   labels:
     host: {{ .Values.exposure.ingress.host }}
 spec:
+  {{ if .Values.exposure.tls.enabled }}
+  tls:
+  - hosts:
+      - {{ .Values.exposure.ingress.host }}
+    secretName: {{ .Values.exposure.tls.secretName }}
+  {{ end }}
   rules:
     - host: {{ .Values.exposure.ingress.host }}
       http:

@@ -6,21 +6,22 @@ The following tables list the configurable parameters of the Apimap.io API chart
 
 ### Metadata
 
-| Parameter                         | Description                          | Default                                   | Required |
-| --------------------------------- | ------------------------------------ | ----------------------------------------- | -------- |
-| metadata.copyright                | Copyright notice on the content of the catalog | Empty | Required |
-| metadata.faq                      | Very short description and URL to the place the organization has stored information about this solution, implementation and usage. | Empty | Required |
-| metadata.support                  | Very short description and URL to where support for this solution is to be found. | Empty | Required |
+| Parameter          | Description                                                                                                                        | Default | Required |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------|---------|----------|
+| metadata.copyright | Copyright notice on the content of the catalog                                                                                     | Empty   | Required |
+| metadata.faq       | Very short description and URL to the place the organization has stored information about this solution, implementation and usage. | Empty   | Required |
+| metadata.support   | Very short description and URL to where support for this solution is to be found.                                                  | Empty   | Required |
 
 ### Openapi
 
-| Parameter                         | Description                          | Default                                   | Required |
-| --------------------------------- | ------------------------------------ | ----------------------------------------- | -------- |
-| openapi.enabled                   | If enabled a openapi document is available at <base url>/documentation/openapi3 | false | Required |
+| Parameter       | Description                                                                     | Default | Required |
+|-----------------|---------------------------------------------------------------------------------|---------|----------|
+| openapi.enabled | If enabled a openapi document is available at <base url>/documentation/openapi3 | false   | Required |
 
 ### Storage
 
 #### Nitrite local storage
+
 | Parameter                     | Description                                             | Default     | Required |
 |-------------------------------|---------------------------------------------------------|-------------|----------|
 | storage.nitrite               | Use internal NoSQL database to provide content storage  |  Object     |          |
@@ -29,6 +30,7 @@ The following tables list the configurable parameters of the Apimap.io API chart
 | storage.nitrite.storageClass  | Storage class to be used for the volume                 | ""          |          |
  
 #### MongoDB dedicated storage
+
 | Parameter                      | Description                                                                                                      | Default | Required |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------|---------|----------|
 | storage.mongodb                | Use an external MongoDB NoSQL database to provide content storrage                                               | Object  |          |
@@ -43,18 +45,30 @@ The following tables list the configurable parameters of the Apimap.io API chart
 
 **Note:** This also includes statistics and health monitoring.
 
-| Parameter | Description                                 | Default | Required |
-|-----------|---------------------------------------------|---------|----------|
-| log.level | Log level to be used by the service         | INFO    | Required |
-| log.endpoints.statistics.enabled | Enable http(s) request logging to stdout    | false |          |
-| log.endpoints.health.enabled | Enable health endpoints at /actuator/health | false |          |
-
-
+| Parameter                        | Description                                 | Default | Required |
+|----------------------------------|---------------------------------------------|---------|----------|
+| log.level                        | Log level to be used by the service         | INFO    | Required |
+| log.endpoints.statistics.enabled | Enable http(s) request logging to stdout    | false   |          |
+| log.endpoints.health.enabled     | Enable health endpoints at /actuator/health | false   |          |
 
 ### Exposure
 
-| Parameter                         | Description                          | Default                                   | Required |
-| --------------------------------- | ------------------------------------ | ----------------------------------------- | -------- |
-| exposure.nodeport.enabled         | Enable the use of nodeport           | false                                     | Required |
-| exposure.ingress.enabled          | Enable the use of ingress            | false                                     | Required |
-| exposure.ingress.host             | Hostname / domain name that the service should respond to | ""                   | Required | 
+#### Nodeport
+
+| Parameter                 | Description                      | Default       | Required |
+|---------------------------|----------------------------------|---------------|----------|
+| exposure.nodeport.enabled | Enable the use of nodeport       | false         | Required |
+
+#### Ingress
+
+| Parameter                 | Description                                               | Default             | Required |
+|---------------------------|-----------------------------------------------------------|---------------------|----------|
+| exposure.ingress.enabled  | Enable the use of ingress                                 | false               | Required |
+| exposure.ingress.host     | Hostname / domain name that the service should respond to | ""                  | Required | 
+
+#### TLS
+
+| Parameter                    | Description                                                   | Default | Required |
+|------------------------------|---------------------------------------------------------------|---------|----------|
+| exposure.tls.enabled         | Enable the use of TLS                                         | false   | Required |   
+| exposure.tls.secretName      | Name of the secret that contains the tls.crt and tls.key data |         |          |
