@@ -1,6 +1,16 @@
 Changelog
 ===
 
+### 05.08.2022
+- Update to api image v1.8.0
+- Added TLS support to all services
+
+### 02.08.2022
+- Update to portal image v 2.1.1
+
+### 02.08.2022
+- Update to portal image v 2.1.0
+
 ### 11.07.2022
 - Update to portal image v 2.0.3
 

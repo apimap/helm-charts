@@ -26,3 +26,8 @@ exposure:
     enabled: true
     # Hostname to be used
     host: ""
+  tls:
+    # Enable tls
+    enabled: false
+    # name of the secret to be inserted
+    secretName: ""
