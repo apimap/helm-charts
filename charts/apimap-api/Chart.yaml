@@ -18,8 +18,8 @@ sources:
 maintainers:
   - name: Magnus Sulland
     email: magnus.sulland@telenor.no
-appVersion: "1.8.0"
-version: "1.8.0"
+appVersion: "1.8.1"
+version: "1.8.1"
 annotations:
   artifacthub.io/links: |
     - name: Chart Source
