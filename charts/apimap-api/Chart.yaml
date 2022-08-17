@@ -28,5 +28,5 @@ annotations:
       url: http://apimap.io
   artifacthub.io/images: |
     - name: apimap 
-      image: apimap/api:v1.8.0
+      image: apimap/api:v1.8.1
   artifacthub.io/license: Apache-2.0

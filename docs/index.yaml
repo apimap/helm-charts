@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   apimap-api:
   - annotations:
-      artifacthub.io/images: "- name: apimap \n  image: apimap/api:v1.8.0\n"
+      artifacthub.io/images: "- name: apimap \n  image: apimap/api:v1.8.1\n"
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
         - name: Chart Source
@@ -37,7 +37,7 @@ entries:
     - https://apimap.github.io/helm-charts/apimap-api-1.8.1.tgz
     version: 1.8.1
   - annotations:
-      artifacthub.io/images: "- name: apimap \n  image: apimap/api:v1.8.0\n"
+      artifacthub.io/images: "- name: apimap \n  image: apimap/api:v1.8.1\n"
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
         - name: Chart Source

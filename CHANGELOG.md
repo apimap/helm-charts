@@ -1,6 +1,10 @@
 Changelog
 ===
 
+### 17.08.2022
+- Update to api image v1.8.1
+- Moved image portal image config to helpers.tpl
+
 ### 08.08.2022
 - Update to portal image v2.1.4
 
