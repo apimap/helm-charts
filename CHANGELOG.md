@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 18.08.2022
+- Update to api image v1.8.5
+
 ### 17.08.2022
 - Update to api image v1.8.1
 - Update to api image v1.8.2
