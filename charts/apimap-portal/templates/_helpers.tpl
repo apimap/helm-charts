@@ -11,5 +11,5 @@
 {{- end -}}
 
 {{- define "apimap.image" -}}
-{{- printf "apimap/portal:v2.1.4" -}}
+{{- printf "apimap/portal:v2.3.0" -}}
 {{- end -}}
