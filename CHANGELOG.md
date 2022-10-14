@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 14.10.2022
+- Update to developer image v1.2.0
+
 ### 24.08.2022
 - Update to portal image v2.3.0
 
