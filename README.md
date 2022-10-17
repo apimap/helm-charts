@@ -1,6 +1,8 @@
 Apimap.io Helm Charts
 ===
 
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/apimap)](https://artifacthub.io/packages/search?repo=apimap)
+
 🎉 **Welcome** 🎉
 
 This is the home of the Apimap.io project, a freestanding solution to keep track of all functionality a company
