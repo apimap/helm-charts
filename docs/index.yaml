@@ -11,10 +11,10 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.7
-    created: "2022-10-14T12:44:35.102516+02:00"
+    created: "2022-10-27T16:34:09.575117+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
-    digest: ac0e2c1f3c9d41429c523c3043ac93d09463ff9c8aae9310a389e7f3b39a9f5a
+    digest: f6135c97cc1fd2115be5406bc984c3ecbd4d4b3c5727045043526dced5ec71f5
     home: http://apimap.io
     keywords:
     - api
@@ -46,7 +46,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.6
-    created: "2022-10-14T12:44:35.102145+02:00"
+    created: "2022-10-27T16:34:09.574802+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: f6d28acb6a94194854ab736d052f7131246682b94b03e554176ad51af551ca17
@@ -81,7 +81,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.5
-    created: "2022-10-14T12:44:35.101839+02:00"
+    created: "2022-10-27T16:34:09.574461+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: f2f9e77dd82426985c97f242e678989079d9771c9eabd838c69049329649364d
@@ -116,7 +116,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.4
-    created: "2022-10-14T12:44:35.101513+02:00"
+    created: "2022-10-27T16:34:09.573358+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 631f984a3c9039fa2c851bb22e42c7c42dce44d3c4f84b0145a3c46b4a851832
@@ -151,7 +151,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.3
-    created: "2022-10-14T12:44:35.101169+02:00"
+    created: "2022-10-27T16:34:09.573053+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 8448f1ee3cffc66004d7e6d2e3769feeda68af5d499b9390c49b942156f50007
@@ -186,7 +186,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.2
-    created: "2022-10-14T12:44:35.100886+02:00"
+    created: "2022-10-27T16:34:09.572744+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 324de61c419b56400500bc19a31f8f4c645ec33b1e809451cd242a90a8eda30f
@@ -221,7 +221,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.1
-    created: "2022-10-14T12:44:35.100598+02:00"
+    created: "2022-10-27T16:34:09.572442+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 23e342017dbe940279e0c5b61ca859600e8e994e6f3632119eda085df84d76f6
@@ -256,7 +256,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.8.0
-    created: "2022-10-14T12:44:35.10032+02:00"
+    created: "2022-10-27T16:34:09.572142+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: bda0f5687765c33b54d8c5e6a195cf33fcc53a2ad8ca268d4d385b1679755603
@@ -291,7 +291,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.4.3
-    created: "2022-10-14T12:44:35.100039+02:00"
+    created: "2022-10-27T16:34:09.571853+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 1695a8841ef3f6f16b4d765e8bf89c1db8be074c27baa5c9d7011b5da75db3ea
@@ -328,7 +328,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.4.2
-    created: "2022-10-14T12:44:35.099741+02:00"
+    created: "2022-10-27T16:34:09.571563+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: b4c49ad2791eac2e3278256efd87beeb1b7a8bde1badff18faf38265b1cefe4e
@@ -365,7 +365,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.4.1
-    created: "2022-10-14T12:44:35.099432+02:00"
+    created: "2022-10-27T16:34:09.571264+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 584a85fe85b9fe73f926a3609c46fe1277708df74d44fd6ef510591d7545948f
@@ -402,7 +402,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2022-10-14T12:44:35.099138+02:00"
+    created: "2022-10-27T16:34:09.571004+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: fee303a8a1ec344177f3547a70cbc79500b5b29f389ae7bd6a6b9ecd08bcf82e
@@ -439,7 +439,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.3.1
-    created: "2022-10-14T12:44:35.098835+02:00"
+    created: "2022-10-27T16:34:09.570711+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: df09d9300de222d8850ae7fa33c9775d24b45e438a4b533a6f001b6f8b957278
@@ -477,10 +477,10 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.3.0
-    created: "2022-10-14T12:44:35.104651+02:00"
+    created: "2022-10-27T16:34:09.57664+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
-    digest: 9971f80e37abd97bd4155ead349abee35f819bbefc75e5449dcd5673508832cd
+    digest: 6da8a95077dd991eeb5721074421c053c01bf12cbd18858d604d858c845e7d2b
     home: http://apimap.io
     keywords:
     - api
@@ -514,7 +514,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.2.0
-    created: "2022-10-14T12:44:35.104433+02:00"
+    created: "2022-10-27T16:34:09.576419+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: aa4d5a3d144f2adc677c12f544b82ee4b8631e54f8077d2b8cf2aabc9c47d83e
@@ -551,7 +551,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.1.2
-    created: "2022-10-14T12:44:35.104223+02:00"
+    created: "2022-10-27T16:34:09.576202+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 9d5f34b9bd7abeacb3a8256abb7ef80917a7148d71e38c2984eed34704c2238a
@@ -588,7 +588,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2022-10-14T12:44:35.104006+02:00"
+    created: "2022-10-27T16:34:09.576002+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 2431a5421dc9cca93ad66fb3c51d20fa431f162efe984b1177358d4c5e406ee0
@@ -625,7 +625,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.1.0
-    created: "2022-10-14T12:44:35.103782+02:00"
+    created: "2022-10-27T16:34:09.575796+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 94440543d7f1e177e8ee5090e247b4c75ae8264a789cd7f447d66acebd589523
@@ -662,7 +662,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.1
-    created: "2022-10-14T12:44:35.103539+02:00"
+    created: "2022-10-27T16:34:09.575574+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 9df01bbc7b17a419546aa6f4f0d1eeb9f1bb3d1e26ea88f0cf69fc634548481f
@@ -699,7 +699,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-14T12:44:35.103035+02:00"
+    created: "2022-10-27T16:34:09.575342+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 7da6a9f6b68ec372ac6ea9de45b88423ddce09b8f1de1443bb154deb9412357a
@@ -728,6 +728,43 @@ entries:
   - annotations:
       artifacthub.io/images: |
         - name: apimap
+          image: apimap/portal:v2.4.0
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/apimap/helm-charts
+        - name: Apimap.io
+          url: http://apimap.io
+    apiVersion: v2
+    appVersion: 2.4.0
+    created: "2022-10-27T16:34:09.580037+02:00"
+    description: Apimap.io is a centralized API registry. Creating a single place
+      for discoverability, reuse and sharing of knowledge across an organization.
+    digest: e18845d94142d63e402f1fbb9394adca6bd30ea948b018934754d1c8ce0428c4
+    home: http://apimap.io
+    keywords:
+    - api
+    - registry
+    - catalog
+    - hub
+    - apimap.io
+    - search
+    - overview
+    maintainers:
+    - email: magnus.sulland@telenor.no
+      name: Magnus Sulland
+    name: apimap-portal
+    sources:
+    - https://github.com/apimap/java-portal
+    - https://github.com/apimap
+    - https://hub.docker.com/r/apimap/portal
+    type: application
+    urls:
+    - https://apimap.github.io/helm-charts/apimap-portal-2.4.0.tgz
+    version: 2.4.0
+  - annotations:
+      artifacthub.io/images: |
+        - name: apimap
           image: apimap/portal:v2.3.0
       artifacthub.io/license: Apache-2.0
       artifacthub.io/links: |
@@ -737,7 +774,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.3.0
-    created: "2022-10-14T12:44:35.10688+02:00"
+    created: "2022-10-27T16:34:09.579789+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: ea429a4a5d96d17ba5d59bfbebfd32628de26f4caa2db3968ddc24e0989c3316
@@ -774,7 +811,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.2.1
-    created: "2022-10-14T12:44:35.106666+02:00"
+    created: "2022-10-27T16:34:09.578787+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 67a7c60525beaea6cfe3e7466e9b8ee7f07905cf38cc39bd0559f0a03ab510f5
@@ -811,7 +848,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.2.0
-    created: "2022-10-14T12:44:35.10646+02:00"
+    created: "2022-10-27T16:34:09.578562+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: b4b4440a83997457924fb679b3cfe55fc2cfbb161bf65456885f06877fd68a58
@@ -848,7 +885,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.1.1
-    created: "2022-10-14T12:44:35.106255+02:00"
+    created: "2022-10-27T16:34:09.578327+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 201a825baf3b13f1fdae04022dc418b9330d2dc63ede373fa20439e57947bd2a
@@ -885,7 +922,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.1.0
-    created: "2022-10-14T12:44:35.106063+02:00"
+    created: "2022-10-27T16:34:09.578095+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: e03e8e0a7f07204a828d0bd86a9be783d3906842e6b6dbdf1464ba97a2c6cc6b
@@ -922,7 +959,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.0.3
-    created: "2022-10-14T12:44:35.105858+02:00"
+    created: "2022-10-27T16:34:09.577883+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: a2bd9c527589c888016146195ea94e23c90cc991b0adcbda757dcecd0700a26c
@@ -959,7 +996,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.0.2
-    created: "2022-10-14T12:44:35.105658+02:00"
+    created: "2022-10-27T16:34:09.577685+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 2a23a9b7c756566122f0426e23e3cf8f15dd64ef0c9217d4cedd8a5c8ecb17ff
@@ -996,7 +1033,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.0.1
-    created: "2022-10-14T12:44:35.105464+02:00"
+    created: "2022-10-27T16:34:09.577481+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 948e5b7cf367a6eedc4efcd1e970466d809c5828e1bb882ef378d504f43c0a76
@@ -1033,7 +1070,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-10-14T12:44:35.105257+02:00"
+    created: "2022-10-27T16:34:09.577265+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 8b2e198b112cb32863a152203b98d7c6a7e5bd82a4828e2b072b8d65a43a16b3
@@ -1070,7 +1107,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 2.0.0
-    created: "2022-10-14T12:44:35.105048+02:00"
+    created: "2022-10-27T16:34:09.577057+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 04842bcf0e8e52cdbb9304d4a660b50976ce12cd9470280b3cbe8629980640da
@@ -1107,7 +1144,7 @@ entries:
           url: http://apimap.io
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-10-14T12:44:35.104846+02:00"
+    created: "2022-10-27T16:34:09.576841+02:00"
     description: Apimap.io is a centralized API registry. Creating a single place
       for discoverability, reuse and sharing of knowledge across an organization.
     digest: 45c351a937bca29668ccfbebab331728749701120fb2f3f8b3911dbcef366e3a
@@ -1132,4 +1169,4 @@ entries:
     urls:
     - https://apimap.github.io/helm-charts/apimap-portal-0.0.1.tgz
     version: 0.0.1
-generated: "2022-10-14T12:44:35.09839+02:00"
+generated: "2022-10-27T16:34:09.57029+02:00"
