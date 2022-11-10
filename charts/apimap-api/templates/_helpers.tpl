@@ -11,7 +11,7 @@
 {{- end -}}
 
 {{- define "apimap.image" -}}
-{{- printf "apimap/api:v1.8.7" -}}
+{{- printf "apimap/api:v1.8.11" -}}
 {{- end -}}
 
 {{- define "apimap.services"}}
