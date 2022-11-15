@@ -1,6 +1,9 @@
 Changelog
 ===
 
+### 15.11.2022
+- Updated to developer image v1.3.1
+
 ### 10.11.2022
 - Update to api image v1.8.11
 
